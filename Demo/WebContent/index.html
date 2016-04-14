@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Trần Sĩ Nguyên</title>
+</head>
+<script language="javascript" src="js/jquery-2.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script language="javascript" src="js/my_jquery.js"></script>
+
+<body class="container">
+<div class="row" id="id_header"></div>
+<div class="row">
+  <p class="pd1"><img src="images/cong.png" />Tạo Học Sinh Mới</p>
+</div>
+<div class="row">
+  <div class="col-sm-5">
+    <table id="tbloc">
+      <tr id="trhoten">
+        <td><input type="checkbox" id="ckhoten" class="cbloc"></td>
+        <td> Họ Và Tên </td>
+        <td ><input type="text" id="txthoten" class="txtloc" /></td>
+      </tr >
+      <tr id="trngaysinh">
+        <td><input type="checkbox" id="ckngaysinh" class="cbloc"></td>
+        <td> Ngày Sinh </td>
+        <td ><input type="text" id="txtngaysinh" class="txtloc"/>
+        <td>
+      </tr>
+      <tr id="trquocgia">
+        <td><input type="checkbox" id="ckquocgia" class="cbloc" ></td>
+        <td> Quốc Gia </td>
+        <td ><input type="text"id="txtquocgia" class="txtloc" /></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-5">
+    <div>
+      <table>
+        <tr>
+          <td><select id="sel1" >
+              <option id="cbchonboloc" value="" selected="selected" >Chọn Bộ Lọc</option>
+              <option id="cbhoten" value="cbhoten" >Họ Tên</option>
+              <option id="cbngaysinh" value="cbngaysinh">Ngày Sinh</option>
+              <option id="cbquocgia" value="cbquocgia">Quốc Gia</option>
+            </select></td>
+          <td><label style="color:#0FF"> Thêm bộ lọc </label></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="apdungxoa">
+    <button type="button" id="v2apdung" value="v2apdung"><img src="images/tick.png" />&nbsp;Áp dụng</button>
+    <button type="button" id= "v2xoa" value="v2xoa"><img src="images/delect.png" />&nbsp;Xoá</button>
+  </div>
+</div>
+<div class="row">
+<table width="100%"  >
+<tr >
+  <th class="o1"><input type="checkbox" id="checkAll" /></th>
+  <th class="o2">STT </th>
+  <th class="o3">Họ Tên </th>
+  <th class="o4">Ngày Sinh</th>
+  <th class="o5">Quốc Gia</th>
+</tr>
+<tr class="dong" id="1" >
+  <td class="o1" ><input type="checkbox"class="checkds"/></td>
+  <td class="o2">1</td>
+  <td class="o3"><p>HS01 | Võ Tấn Biên R</p></td>
+  <td class="o4"><p>11/05/2014</p></td>
+  <td class="o5"><p>Việt Nam</p></td>
+</tr>
+<tr class="dong" id="2">
+  <td class="o1" ><input type="checkbox" class="checkds"/></td>
+  <td class="o2">2</td>
+  <td class="o3"><p>HS01 | Võ Tấn Biên W</p></td>
+  <td class="o4"><p>12/05/2014</p></td>
+  <td class="o5"><p>Anh</p></td>
+</tr>
+<tr class="dong" id="3">
+  <td class="o1" ><input type="checkbox" class="checkds" /></td>
+  <td class="o2">3</td>
+  <td class="o3"><p id="p1">HS01 | Võ Tấn Biên Q</p></td>
+  <td class="o4"><p>13/05/2014</p></td>
+  <td class="o5"><p>Mỹ</p></td>
+</tr>
+<tr class="dong" id="4">
+  <td class="o1" ><input type="checkbox" class="checkds"/></td>
+  <td class="o2">4</td>
+  <td class="o3"><p>HS01 | Võ Tấn Biên Z</p></td>
+  <td class="o4"><p>14/05/2014</p></td>
+  <td class="o5"><p>Anh</p></td>
+</tr>
+<tr class="dong" id="5">
+  <td class="o1" ><input type="checkbox" class="checkds"/></td>
+  <td class="o2">5</td>
+  <td class="o3"><p>HS01 | Võ Tấn Biên K</p></td>
+  <td class="o4"><p>15/05/2014</p></td>
+  <td class="o5"><p>Anh</p></td>
+</tr>
+<tr class="dong" id="6">
+  <td class="o1" ><input type="checkbox" class="checkds"/></td>
+  <td class="o2">6</td>
+  <td class="o3"><p>HS01 | Võ Tấn Biên A</p></td>
+  <td class="o4"><p>15/05/2014</p></td>
+  <td class="o5"><p>Anh</p></td>
+</tr>
+</table>
+</div>
+<div class="row">
+  <div class="themxoa">
+    <button type="button" value="v4them" id="v4them">Thêm</button>
+    <button type="button" value="v4xoa" id="v4xoa">Xoá </button>
+  </div>
+  <div class="phantrang">
+  <p>
+  <ul id="ulul"><li id="il1">1</li><li>2</li></ul>
+  </p>
+  </div>
+</div>
+<div class="row" id="id_footer"></div>
+</body>
+</html>

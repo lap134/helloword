@@ -1,0 +1,83 @@
+#ulul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+	padding-left:10px;
+	padding-right:10px;
+	margin-right:5px;
+	background-color:#0CF
+}
+#id_header{
+	
+	margin-top:50px}
+.o1{
+ width:10%	
+	}
+.o2{
+	width:10%
+	}
+.o3{
+	width:40%
+	
+	}
+.o4{
+	width:20%
+	}
+.o5{
+	width:20%
+	}
+#txthoten {
+	visibility: hidden;
+}
+#txtngaysinh {
+	visibility: hidden;
+}
+#txtquocgia {
+	visibility: hidden;
+}
+#trhoten {
+	visibility: hidden;
+}
+#trngaysinh {
+	visibility: hidden;
+}
+#trquocgia {
+	visibility: hidden;
+}
+.row {
+	border: double;
+	border-bottom-style: solid;
+	border-color: #333;
+	border-collapse:collapse ;
+}
+table {
+	margin-bottom: 10px;
+}
+table tr td {
+	padding: 5px 10px 5px 10px;
+}
+table tr th {
+	padding: 5px 10px 5px 10px;
+}
+.pd1 {
+	text-align: right;
+	padding: 5px 10px 0px 10px;
+}
+.sel1 {
+	width: 200px
+}
+.apdungxoa {
+	text-align: right;
+	padding: 5px 10px 5px 10px;
+}
+.phantrang{
+	
+	text-align:right;
+	padding-right:100px}
+.themxoa{
+	padding:20px 20px 20px 20px
+	}
